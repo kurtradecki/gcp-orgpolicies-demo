@@ -22,6 +22,6 @@ module "orgpolicy" {
 }
 ```
 
-For more on list contraints, see [Use list constraints with an organization policy[(https://cloud.google.com/resource-manager/docs/organization-policy/using-constraints#list-constraint)
+For more on list contraints, see [Use list constraints with an organization policy](https://cloud.google.com/resource-manager/docs/organization-policy/using-constraints#list-constraint)
 
 For more on boolean constaints, see [Using boolean constraints in organization policy](https://cloud.google.com/resource-manager/docs/organization-policy/using-constraints#boolean-constraint)
