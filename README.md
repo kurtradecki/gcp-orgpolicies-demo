@@ -17,7 +17,7 @@ module "orgpolicy" {
 module "orgpolicy" {
   source      = "github.com/kurtradecki/gcp-orgpolicies-demo"
   project_id  = "project_id"
-  boolorgpols = []   # constraints that are enforced / not enforced
+  boolorgpols = []   # no constraints that are enforced / not enforced
   listorgpols = ["compute.trustedImageProjects"]   # constraints that are allow all / deny all  / custom
 }
 ```
