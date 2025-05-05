@@ -8,16 +8,17 @@
 module "orgpolicy" {
   source      = "github.com/kurtradecki/gcp-orgpolicies-demo"
   project_id  = "project_id"
-  boolorgpols = ["",""]   # constraints that are 
-  listorgpols = ["iam.allowedPolicyMemberDomains"]
+  boolorgpols = ["compute.requireShieldedVm"]   # constraints that are enforced / not enforced
+  listorgpols = ["iam.allowedPolicyMemberDomains", "compute.vmCanIpForward", "compute.vmExternalIpAccess"]   # constraints that are allow all / deny all / custom
 }
 ```
 
+```
 module "orgpolicy" {
   source      = "github.com/kurtradecki/gcp-orgpolicies-demo"
   project_id  = "project_id"
-  boolorgpols = ["","",""]   # constraints that are 
-  listorgpols = []
+  boolorgpols = []   # constraints that are enforced / not enforced
+  listorgpols = ["compute.trustedImageProjects"]   # constraints that are allow all / deny all  / custom
 }
 ```
 
