@@ -28,7 +28,6 @@ module "bool_org_policy" {
   constraint  = "constraints/${each.value}"
   policy_type = "boolean"
   enforce     = false
-  #  version           = "~> 3.0.2"
 }
 
 # allow all / deny all type org policies
@@ -40,5 +39,4 @@ module "list_org_policy" {
   constraint  = "constraints/${each.value}"
   policy_type = "list"
   enforce     = false
-  #  version           = "~> 3.0.2"
 }
